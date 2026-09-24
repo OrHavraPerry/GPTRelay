@@ -1,6 +1,6 @@
 # Luna deployment
 
-Use this branch only when the user authorized deployment. Luna Medium may execute a settled, mechanically checked release plan; it does not invent one during deployment. Choose parent execution or an in-process worker under the router gates. Create or reuse a persistent child only when the user has explicitly authorized that task. The parent owns release judgment and obtains the independent frontier-review required by SKILL.md. If production evidence invalidates the plan, stop the release and return evidence to the parent; remediation follows the routing and task-creation gates.
+Use this branch only when the user authorized deployment. Luna Medium may execute a settled, mechanically checked release plan; it does not invent one during deployment. Use one in-process worker under the router gates when execution is substantive and ownable. The parent owns release judgment and obtains the independent frontier-review required by SKILL.md. If production evidence invalidates the plan, stop the release and return evidence to the parent; remediation follows the routing and task-creation gates.
 
 Before committing, landing, or deploying release changes, the required independent frontier-review must pass. When the user says `deploy`, commit and land only the current task's authorized changes, then deploy affected services from the newest `origin/main` revision containing that commit.
 
