@@ -1,5 +1,7 @@
 # Model routing evidence (GPT-6), 24 September 2026
 
+For all 15 Artificial Analysis model-effort operating points, a separate Vals max-effort comparison, dated sources, and interpretation limits, see [cost-quality curves](cost-curves.md) and [source points](cost-curves.json). Select by relevant workload after quality and review gates; do not infer local cost per accepted task from a composite benchmark score.
+
 Scope: current `gpt-6-astra`, `gpt-6-sol`, `gpt-6-luna` only. This report distinguishes documentation, independent measurements, and routing proposals. Research worker was requested as Sol High; actual runtime model and effort were not surfaced to this worker, so execution setting is **inherited, not verified**.
 
 ## Documented facts

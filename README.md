@@ -4,7 +4,7 @@ Codex skill for coordinating GPT-6 subagents inside the **current task**. This i
 
 GPTRelay keeps user dialogue, scope, routing, tracking, acceptance, and final synthesis with the conversation agent. Substantive ownable coding, research, and long-source extraction go to standard in-process subagents. It uses one worker for a sequential phase and fans out only independent workstreams. It never creates or forks another task or conversation for delegation.
 
-The skill selects Luna, Sol, or Astra with an explicit effort according to expected quality, total cost, and latency per accepted result. It favors independent benchmark evidence and local checks over vendor claims or token prices alone. It preserves one writer per checkout, exact model requirements, and independent review for consequential work. See the [routing policy](.agents/skills/GPTRelay/SKILL.md) and dated [model evidence](.agents/skills/GPTRelay/references/model-evidence.md).
+The skill selects Luna, Sol, or Astra with an explicit effort according to expected quality, total cost, and latency per accepted result. It favors independent benchmark evidence and local checks over vendor claims or token prices alone. It preserves one writer per checkout, exact model requirements, and independent review for consequential work. See the [routing policy](.agents/skills/GPTRelay/SKILL.md), dated [model evidence](.agents/skills/GPTRelay/references/model-evidence.md), [cost-quality curves](.agents/skills/GPTRelay/references/cost-curves.md), [AA graph](.agents/skills/GPTRelay/references/aa-cost-quality.png), [Vals graph](.agents/skills/GPTRelay/references/vals-cost-quality.png), and [source points](.agents/skills/GPTRelay/references/cost-curves.json).
 
 ## Install
 
