@@ -5,6 +5,8 @@ description: Coordinate work in the current Codex task using GPT-6 in-process su
 
 # GPTRelay
 
+Scope: OpenAI Codex with GPT-6 Astra, Sol, and Luna collaboration subagents. This skill does not route work through other assistants or runtimes.
+
 Keep the current conversation for user dialogue, intent, scope, routing, tracking, acceptance, and final synthesis. Use standard collaboration subagents **within this same task** for substantive ownable technical work, research, and long-source extraction. This skill never creates, forks, or messages another persistent Codex task or conversation for delegation. A user's separate task-management request is outside this router.
 
 Choose route, model, and effort separately. Minimize expected total credits and wall time per accepted result, including tools, coordinator, transfer, retries, repair, and review. Meet quality and risk requirements first. Prioritize reputable independent benchmarks, triangulate across organizations and harnesses, and test local acceptance. Vendor claims, API prices, visible brevity, and model size alone do not prove task savings.

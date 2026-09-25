@@ -1,6 +1,6 @@
 # GPTRelay
 
-Codex skill for coordinating GPT-6 subagents inside the **current task**. This is an opinionated fork of [Forward-Future/gpt-5-6-relay](https://github.com/Forward-Future/gpt-5-6-relay).
+Codex skill for coordinating GPT-6 subagents inside the **current task**. Adapted from [Forward-Future/gpt-5-6-relay](https://github.com/Forward-Future/gpt-5-6-relay) for OpenAI Codex.
 
 GPTRelay keeps user dialogue, scope, routing, tracking, acceptance, and final synthesis with the conversation agent. Substantive ownable coding, research, and long-source extraction go to standard in-process subagents. It uses one worker for a sequential phase and fans out only independent workstreams. It never creates or forks another task or conversation for delegation.
 
@@ -8,7 +8,7 @@ The skill selects Luna, Sol, or Astra with an explicit effort according to expec
 
 ## Install
 
-Copy [GPTRelay](.agents/skills/GPTRelay) into a Codex project's .agents/skills directory or your personal Codex skills directory. Use the exact GPTRelay spelling.
+Copy the entire [GPTRelay skill directory](.agents/skills/GPTRelay) to your project's `.agents/skills/GPTRelay` or your personal `~/.codex/skills/GPTRelay`. Keep its `references/` and `scripts/` directories with `SKILL.md`.
 
 For global always-on use, add one instruction to AGENTS.md: “At start of every turn, read and follow ~/.codex/skills/GPTRelay/SKILL.md completely.” Resolve that path to your personal skill location if different.
 
@@ -17,8 +17,6 @@ For global always-on use, add one instruction to AGENTS.md: “At start of every
 Invoke GPTRelay with a concrete task: “Use $GPTRelay to implement and verify this task.”
 
 Collaboration tools must be available for subagent execution and independent review. The conversation agent cannot change its own model or effort through this skill; it reports worker settings only when runtime surfaces them. A requested model/effort is not proof of the actual setting.
-
-The repository also preserves the standalone [agentic-executer](.agents/skills/agentic-executer/SKILL.md) skill from its fork lineage. GPTRelay does not invoke it.
 
 ## License
 
