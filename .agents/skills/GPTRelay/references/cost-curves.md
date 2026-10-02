@@ -1,5 +1,7 @@
 # GPT-6 operating-point curves (24 September 2026)
 
+Historical curves: **Sol here means `gpt-6-sol`**. JSON and graphs retain that dated model identity; they contain no GPT-6.1 Sol measurements. Read [GPT-6.1 Sol evidence, 1 October 2026](gpt-6.1-sol-evidence.md) for its current effort points and separate Vals comparison. Do not apply the old Sol/Astra crossover to GPT-6.1 Sol.
+
 Use this reference when model **and effort** might change a route. [Machine-readable points](cost-curves.json) retain each value's source URL. Measurements are API benchmark observations, not Codex credit costs or accepted-result rates. Keep the [routing and review policy](../SKILL.md) and [model evidence](model-evidence.md) in force.
 
 ## Artificial Analysis: one comparable suite

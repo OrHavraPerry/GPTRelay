@@ -1,5 +1,7 @@
 # Model routing evidence (GPT-6), 24 September 2026
 
+Historical snapshot for `gpt-6-sol`, not `gpt-6.1-sol`. For the current default Sol, read [GPT-6.1 Sol evidence, 1 October 2026](gpt-6.1-sol-evidence.md). The proposals below used the previous Sol; apply the current [routing policy](../SKILL.md). Rankings, pricing, and benchmark coverage below are dated observations, not current availability claims.
+
 For all 15 Artificial Analysis model-effort operating points, a separate Vals max-effort comparison, dated sources, and interpretation limits, see [cost-quality curves](cost-curves.md) and [source points](cost-curves.json). Select by relevant workload after quality and review gates; do not infer local cost per accepted task from a composite benchmark score.
 
 Scope: current `gpt-6-astra`, `gpt-6-sol`, `gpt-6-luna` only. This report distinguishes documentation, independent measurements, and routing proposals. Research worker was requested as Sol High; actual runtime model and effort were not surfaced to this worker, so execution setting is **inherited, not verified**.

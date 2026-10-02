@@ -5,7 +5,7 @@ description: Coordinate work in the current Codex task using GPT-6 in-process su
 
 # GPTRelay
 
-Scope: OpenAI Codex with GPT-6 Astra, Sol, and Luna collaboration subagents. This skill does not route work through other assistants or runtimes.
+Scope: OpenAI Codex with GPT-6 Astra, GPT-6.1 Sol (or previous GPT-6 Sol), and GPT-6 Luna collaboration subagents. This skill does not route work through other assistants or runtimes.
 
 Keep the current conversation for user dialogue, intent, scope, routing, tracking, acceptance, and final synthesis. Use standard collaboration subagents **within this same task** for substantive ownable technical work, research, and long-source extraction. This skill never creates, forks, or messages another persistent Codex task or conversation for delegation. A user's separate task-management request is outside this router.
 
@@ -34,19 +34,23 @@ All collaboration agents share the filesystem. Exactly one automated mutating ow
 
 The user selects conversation model in the app. This skill cannot switch current parent model or effort. If no runtime control exposes them, report _inherited, not surfaced_ once; never claim a requested worker route was executed without evidence. Child routing does not lower parent cost. Keep coordinator compact and route ownable execution to workers. An explicit user or project model/effort requirement stays exact. If an external exact requirement names a legacy model, ask its owner rather than silently substituting GPT-6.
 
-Use these provisional **GPT-6-only** starting points when local comparable evidence is absent:
+For non-exact routes, **Sol means `gpt-6.1-sol` when surfaced by the selected collaboration tool and host**. If unavailable, use surfaced `gpt-6-sol` and report the substitution; historical GPT-6 Sol evidence does not measure GPT-6.1 Sol. Exact requests for either model stay exact. If neither Sol is available, apply the fallback gates below.
+
+Use these provisional **GPT-6-family-only** starting points when local comparable evidence is absent:
 
 | Model | Starting work | Effort |
 | --- | --- | --- |
 | Luna (gpt-6-luna) | Deterministic bulk extraction, source maps, focused repeatable coding and checks | Medium for mechanical volume with sampled checks; High for focused coding or synthesis. xhigh requires named failed check or relevant workload evidence. |
-| Sol (gpt-6-sol) | Broad/default clear coding, agentic tools, multi-source synthesis, ordinary ambiguity | Medium; High for a named difficulty or failed acceptance. |
+| Sol (gpt-6.1-sol; gpt-6-sol availability fallback) | Broad/default clear coding, agentic tools, multi-source synthesis, ordinary ambiguity | Medium; High for a named difficulty or failed acceptance. |
 | Astra (gpt-6-astra) | Named hard diagnosis, coupled systems, conflicting evidence, difficult multistep judgment, frontier review | Medium for hard judgment; High for named hard execution; Low when evidence supports it. xhigh or above requires lower-Astra-effort failure or relevant workload evidence. |
 
 These are workload hypotheses, not universal rankings. Select an operating point (model **and** effort) by first enforcing task quality, capability, and independent-review gates; then compare relevant workload evidence for total accepted-result cost and wall time. Compare plausible points directly rather than climbing a fixed cheap-to-expensive ladder. Sol Low is a latency candidate for bounded work; Luna xhigh/max can be quality candidates when their extra reasoning meets a named check at acceptable latency. Astra Low is a candidate for a named hard problem when Sol High/Max would spend much longer reasoning and the relevant workload supports it. Preserve the bounded-Astra requirement below. Aggregate scores alone never change a floor or prove local acceptance.
 
-For dated evidence, operating-point curves, limitations, and sources, read [references/model-evidence.md](references/model-evidence.md) and [references/cost-curves.md](references/cost-curves.md) when comparing or changing routes. Keep API dollars and Codex credits separate. Refresh when availability/pricing changes or observed acceptance invalidates a route; do not browse every routine turn. If routes remain uncertain, calibrate representative tasks with actual model/effort, acceptance, wall time, and **total** spend including parent, review, retries, and repair; compare within a task class and keep units separate.
+For current Sol evidence and effort controls, read [references/gpt-6.1-sol-evidence.md](references/gpt-6.1-sol-evidence.md). For historical GPT-6 evidence, operating-point curves, limitations, and sources, read [references/model-evidence.md](references/model-evidence.md) and [references/cost-curves.md](references/cost-curves.md) when comparing or changing routes. Keep API dollars and Codex credits separate. Refresh when availability/pricing changes or observed acceptance invalidates a route; do not browse every routine turn. If routes remain uncertain, calibrate representative tasks with actual model/effort, acceptance, wall time, and **total** spend including parent, review, retries, and repair; compare within a task class and keep units separate.
 
 Use model and effort options surfaced by selected collaboration tool and host. Full-history forks inherit settings; explicit overrides require prompt-only or limited-history forks when tool schema permits. Preserve actual or _inherited, not surfaced_ in handoffs. For non-exact work only: if Luna unavailable, consider Sol then Astra; if Sol unavailable, consider Astra, or Luna only after reclassifying as bounded with equivalent checks; if Astra unavailable, Sol may handle ordinary reclassified execution, but an exact Astra or frontier-review gate remains missing. Never silently lower a capability floor. None, minimal, and ultra are not universal effort options; use only exposed values. Higher effort is not automatically better.
+
+GPT-6.1 Sol's API supports low, medium, high, xhigh, max; it rejects none/minimal. Codex host controls can also expose ultra, a mode using subagents, not an additional API reasoning value. Use the selected surface's supported controls; do not impose the API effort list on a Codex host or map ultra silently to max.
 
 ### Bounded Astra use
 
