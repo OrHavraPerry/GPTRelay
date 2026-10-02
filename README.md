@@ -6,6 +6,8 @@ GPTRelay keeps user dialogue, scope, routing, tracking, acceptance, and final sy
 
 The skill selects Luna, Sol, or Astra with an explicit effort according to expected quality, total cost, and latency per accepted result. Non-exact Sol routes use `gpt-6.1-sol` when surfaced, with an explicit `gpt-6-sol` availability fallback; exact model requests remain exact. It favors independent benchmark evidence and local checks over vendor claims or token prices alone. It preserves one writer per checkout and independent review for consequential work. See the [routing policy](.agents/skills/GPTRelay/SKILL.md), current [GPT-6.1 Sol evidence](.agents/skills/GPTRelay/references/gpt-6.1-sol-evidence.md), historical [GPT-6 model evidence](.agents/skills/GPTRelay/references/model-evidence.md), historical [cost-quality curves](.agents/skills/GPTRelay/references/cost-curves.md), [AA graph](.agents/skills/GPTRelay/references/aa-cost-quality.png), [Vals graph](.agents/skills/GPTRelay/references/vals-cost-quality.png), and [source points](.agents/skills/GPTRelay/references/cost-curves.json).
 
+User routing policy: visual creation, inspection, judgment, and all browser interactions require `gpt-6-astra` at least Light (`low`), including routine actions. No Sol/Luna fallback for those phases; text/API research and nonvisual coding retain ordinary routes. Higher effort follows task difficulty. This floor does not replace required independent review or switch the conversation model.
+
 ## Install
 
 Copy the entire [GPTRelay skill directory](.agents/skills/GPTRelay) to your project's `.agents/skills/GPTRelay` or your personal `~/.codex/skills/GPTRelay`. Keep its `references/` and `scripts/` directories with `SKILL.md`.
