@@ -1,5 +1,7 @@
 # GPT-6.1 Sol routing evidence, 1 October 2026
 
+For newer coding/terminal, OS, browser/research, and extraction evidence with explicit gaps, read [task-specific evidence checked 3 October](task-benchmarks-2026-10-03.md). This file retains its dated snapshot; do not mix its harness scores with the newer Codex-harness tables.
+
 Current Sol is `gpt-6.1-sol` when the collaboration tool and host surface it. This evidence supports a provisional default update, not a universal quality ranking or an Astra review replacement. [Previous evidence](model-evidence.md), [curves and graphs](cost-curves.md), and their JSON remain historical `gpt-6-sol` snapshots.
 
 ## Documented facts and vendor guidance
